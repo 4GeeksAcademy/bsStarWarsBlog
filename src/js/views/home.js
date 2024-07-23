@@ -1,12 +1,17 @@
 import React from "react";
 import "../../styles/home.css";
-//import { Cards } from "../component/cards.jsx";
 import { CharacterCards } from "../component/characterCards.jsx";
 import { VehicleCards } from "../component/vehicleCards.jsx";
+import { PlanetCards } from "../component/planetCards.jsx";
 
 export const Home = () => (
   <div className="text-center mt-5">
-	<CharacterCards />
-  <VehicleCards />
+    <CharacterCards />
+    <div className="mt-5">
+      <VehicleCards />
+    </div>
+    <div className="mt-5">
+      <PlanetCards />
+    </div>
   </div>
 );
